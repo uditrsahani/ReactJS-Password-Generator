@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-semibold mb-6 text-center">Password Generator</h1>
+
+        <!-- Password Input -->
+        <div class="mb-4" >
+            <label for="password" class="text-sm block font-medium text-gray-600">Generated Password</label>
+            <input type="text" id="password" class="w-full p-2 bg-gray-100 border border-gray-300 rounded" readonly tabindex="-1"/>
+        </div>
+
+        <!-- Password Length Slider -->
+        <div class="mb-4">
+            <label for="length" class="text-sm block font-medium text-gray-600">Password Length: <span id="lengthValue">12</span></label>
+            <input type="range" id="length" min="8" max="20" value="12" class="w-full mt-2" />
+        </div>
+
+        <!-- Checkbox for Numbers -->
+        <div class="mb-4">
+            <label class="flex items-center">
+                <input type="checkbox" id="includeNumbers" class="form-checkbox">
+                <span class="ml-2 text-sm">Include Numbers</span>
+            </label>
+        </div>
+
+        <!-- Checkbox for Special Characters -->
+        <div class="mb-6">
+            <label class="flex items-center">
+                <input type="checkbox" id="includeSpecialChars" class="form-checkbox">
+                <span class="ml-2 text-sm">Include Special Characters</span>
+            </label>
+        </div>
+
+        <!-- Copy Button -->
+        <button id="copyButton" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+            Copy to Clipboard
+        </button>
+    </div>
+
+    <script>
+        // Add your JavaScript here for password generation and copy to clipboard functionality
+    </script>
+
+</body>
+</html>
